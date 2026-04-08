@@ -20,9 +20,6 @@ body {
 
 .selection-container {
     max-width: 640px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
 }
 
 .selection-container h1 {
@@ -40,4 +37,51 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
+}
+
+.option-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 32px 20px;
+    cursor: pointer;
+    color: var(--text);
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.option-btn:hover {
+    background: rgba(108, 92, 231, 0.2);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(108, 92, 231, 0.3);
+    color: var(--text);
+}
+
+.option-icon {
+    font-size: 3rem;
+}
+
+.option-label {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.option-sub {
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.random-btn {
+    background: rgba(253, 121, 168, 0.06);
+    border-color: rgba(253, 121, 168, 0.2);
+}
+
+.random-btn:hover {
+    background: rgba(253, 121, 168, 0.2);
+    border-color: var(--accent);
+    box-shadow: 0 12px 35px rgba(253, 121, 168, 0.3);
 }
