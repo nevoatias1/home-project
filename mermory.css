@@ -1,14 +1,43 @@
 :root {
     --primary: #6c5ce7;
+    --secondary: #a29bfe;
+    --accent: #fd79a8;
     --bg: #1a1a2e;
+    --surface: #16213e;
     --text: #e2e8f0;
     --muted: #94a3b8;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: var(--bg);
+    background: linear-gradient(135deg, var(--bg) 0%, #16213e 50%, #0f3460 100%);
     color: var(--text);
-    margin: 0;
-    padding: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.selection-container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.selection-container h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-bottom: 36px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
 }
