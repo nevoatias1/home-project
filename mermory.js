@@ -29,3 +29,9 @@ const API = {
             .map(c => ({ url: c.flags.png, name: c.name.common }));
     }
 };
+
+const THEMES = {
+    hp: { fetch: () => API.fetchHP(), title: "⚡ Harry Potter" },
+    dogs: { fetch: () => API.fetchDogs(), title: "🐶 Dogs" },
+    flags: { fetch: () => API.fetchFlags(), title: "🌍 Flags" }
+};
