@@ -2,8 +2,10 @@
     --primary: #6c5ce7;
     --secondary: #a29bfe;
     --accent: #fd79a8;
+    --matched: #00b894;
     --bg: #1a1a2e;
     --surface: #16213e;
+    --card-bg: #0f3460;
     --text: #e2e8f0;
     --muted: #94a3b8;
 }
@@ -25,6 +27,11 @@ body {
 .selection-container h1 {
     font-size: 3.2rem;
     margin-bottom: 10px;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -1px;
 }
 
 .subtitle {
